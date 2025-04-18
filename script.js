@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let aiSymbol = 'O';
     
     const winningConditions = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-        [0, 4, 8], [2, 4, 6]             // Diagonals
+        [0, 1, 2], [3, 4, 5], [6, 7, 8], 
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], 
+        [0, 4, 8], [2, 4, 6]             
     ];
     
     const startGame = (mode) => {
@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const makeAiMove = () => {
         if (!gameActive || currentPlayer !== aiSymbol) return;
         
-        // Simple AI: First try to win, then block opponent, then take center, then random
         let move = findWinningMove(aiSymbol) || 
                   findWinningMove(playerSymbol) || 
                   (gameState[4] === '' ? 4 : null) || 
