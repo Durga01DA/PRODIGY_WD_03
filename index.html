@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="mode-selection" class="mode-selection">
+            <h2>Select Game Mode</h2>
+            <button id="pvp" class="mode-btn">Player vs Player</button>
+            <button id="pvc" class="mode-btn">Player vs Computer</button>
+        </div>
+        <div id="symbol-selection" class="hidden">
+            <h2>Choose Your Symbol</h2>
+            <div class="symbol-options">
+                <button id="choose-x" class="symbol-btn">Play as X</button>
+                <button id="choose-o" class="symbol-btn">Play as O</button>
+            </div>
+            <button id="back-to-mode" class="back-btn">← Back</button>
+        </div>
+        <div id="game-content" class="hidden">
+            <div class="status" id="status">Player X's turn</div>
+            <div class="game-board" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div class="button-group">
+                <button id="back-btn" class="back-btn">← Back</button>
+                <button id="reset">Reset Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
