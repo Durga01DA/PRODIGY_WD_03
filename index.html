@@ -1,116 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoGuard - Environmental Awareness</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <nav class="navbar">
-    <div class="nav-brand">
-      <i class="fas fa-leaf"></i> EcoGuard
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="mode-selection" class="mode-selection">
+            <h2>Select Game Mode</h2>
+            <button id="pvp" class="mode-btn">Player vs Player</button>
+            <button id="pvc" class="mode-btn">Player vs Computer</button>
+        </div>
+        <div id="symbol-selection" class="hidden">
+            <h2>Choose Your Symbol</h2>
+            <div class="symbol-options">
+                <button id="choose-x" class="symbol-btn">Play as X</button>
+                <button id="choose-o" class="symbol-btn">Play as O</button>
+            </div>
+            <button id="back-to-mode" class="back-btn">← Back</button>
+        </div>
+        <div id="game-content" class="hidden">
+            <div class="status" id="status">Player X's turn</div>
+            <div class="game-board" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div class="button-group">
+                <button id="back-btn" class="back-btn">← Back</button>
+                <button id="reset">Reset Game</button>
+            </div>
+        </div>
     </div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#issues">Environmental Issues</a></li>
-      <li><a href="#solutions">Solutions</a></li>
-      <li><a href="#take-action">Take Action</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section id="home" class="section hero">
-    <div class="hero-content">
-      <h1>Protect Our Planet</h1>
-      <p>Join us in creating a sustainable future for generations to come</p>
-      <button class="cta-button">Get Involved</button>
-    </div>
-  </section>
-
-  <section id="issues" class="section">
-    <h2>Environmental Issues</h2>
-    <div class="issues-grid">
-      <div class="issue-card">
-        <i class="fas fa-fire"></i>
-        <h3>Climate Change</h3>
-        <p>Rising global temperatures and extreme weather events threaten our planet's future.</p>
-      </div>
-      <div class="issue-card">
-        <i class="fas fa-trash"></i>
-        <h3>Plastic Pollution</h3>
-        <p>Millions of tons of plastic waste end up in our oceans each year.</p>
-      </div>
-      <div class="issue-card">
-        <i class="fas fa-tree"></i>
-        <h3>Deforestation</h3>
-        <p>Forests are being destroyed at an alarming rate, affecting biodiversity.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="solutions" class="section">
-    <h2>Solutions</h2>
-    <div class="solutions-content">
-      <div class="solution-item">
-        <h3>Renewable Energy</h3>
-        <p>Transition to solar, wind, and other renewable energy sources.</p>
-      </div>
-      <div class="solution-item">
-        <h3>Reduce, Reuse, Recycle</h3>
-        <p>Implement sustainable waste management practices.</p>
-      </div>
-      <div class="solution-item">
-        <h3>Conservation</h3>
-        <p>Protect natural habitats and endangered species.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="take-action" class="section">
-    <h2>Take Action</h2>
-    <div class="action-steps">
-      <div class="step">
-        <i class="fas fa-seedling"></i>
-        <h3>Reduce Your Carbon Footprint</h3>
-        <p>Use public transport, eat less meat, and conserve energy.</p>
-      </div>
-      <div class="step">
-        <i class="fas fa-hands-helping"></i>
-        <h3>Volunteer</h3>
-        <p>Join local environmental cleanup and conservation efforts.</p>
-      </div>
-      <div class="step">
-        <i class="fas fa-bullhorn"></i>
-        <h3>Spread Awareness</h3>
-        <p>Educate others about environmental issues and solutions.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <div class="contact-form">
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="submit-button">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 EcoGuard. All rights reserved.</p>
-    <div class="social-links">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
